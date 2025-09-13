@@ -23,13 +23,12 @@ dnf install stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/yacklebeam/dotfiles.git .dotfiles
-$ cd .dotfiles
+git clone git@github.com:yacklebeam/dotfiles.git .dotfiles && cd .dotfiles
 ```
 
 then use GNU stow to create symlinks
 
 ```
-$ stow .
+stow .
 ```
 

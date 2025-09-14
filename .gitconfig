@@ -1,0 +1,7 @@
+[user]
+	email = jacobmtroxel@gmail.com
+	name = Jacob Martinez-Troxel
+[core]
+	editor = nvim
+[alias]
+	st = status --short

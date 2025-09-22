@@ -25,3 +25,5 @@ fi
 unset rc
 
 eval "$(zoxide init --cmd cd bash)"
+
+alias sd="cd ~ && cd \$(fd --type d | fzf)"

@@ -2,33 +2,23 @@
 
 A repository to setup my Fedora configs and packages
 
-## Requirements
-
-Ensure you have the following installed on your system
-
-### Git and Ansible
-
-```
-dnf install git ansible
-```
 
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git
+First, install `git`
+
+```
+sudo dnf install git
+```
+
+Next, check out the dotfiles repo in your $HOME directory using git
 
 ```
 git clone git@github.com:yacklebeam/dotfiles.git .dotfiles && cd .dotfiles
 ```
 
-Next, use ansible to setup packages
+Finally, run `bootstrap.sh` to install packages and deploy configs.
 
 ```
-ansible-playbook -K ansible-post-install.yml
+chmod +x bootstrap.sh && ./bootstrap.sh
 ```
-
-Finally, use GNU `stow` to create symlinks
-
-```
-stow .
-```
-
